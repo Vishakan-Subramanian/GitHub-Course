@@ -1,1 +1,3 @@
 Hi, creating this text file to understand merge conflicts.
+I am creating a merge conflict with this file.
+To understand merge conflicts.
