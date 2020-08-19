@@ -1,0 +1,2 @@
+I am creating a merge conflict with this file.
+To understand merge conflicts.
