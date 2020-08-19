@@ -1,0 +1,9 @@
+(base) vishakan@Legion:~/Desktop/Git/Patching Files$ diff -u sample1.txt sample2.txt > changes.diff
+(base) vishakan@Legion:~/Desktop/Git/Patching Files$ patch sample1.txt < changes.diff
+patching file sample1.txt
+(base) vishakan@Legion:~/Desktop/Git/Patching Files$ cat sample1.txt
+Hello
+Welcome
+Hey
+Adding!
+

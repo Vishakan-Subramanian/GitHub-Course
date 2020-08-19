@@ -1,0 +1,16 @@
+(base) vishakan@Legion:~/Desktop/Git/Diffing Files$ diff sample1.txt sample2.txt3c3,4
+< Hi
+---
+> Hey
+> Adding!
+
+(base) vishakan@Legion:~/Desktop/Git/Diffing Files$ diff -u sample1.txt sample2.txt
+--- sample1.txt	2020-08-16 13:31:13.116528530 +0530
++++ sample2.txt	2020-08-16 13:31:31.976756071 +0530
+@@ -1,3 +1,4 @@
+ Hello
+ Welcome
+-Hi
++Hey
++Adding!
+
