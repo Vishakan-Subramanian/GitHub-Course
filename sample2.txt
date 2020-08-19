@@ -1,0 +1,1 @@
+Hi, creating this text file to understand merge conflicts.

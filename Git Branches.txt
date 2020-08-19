@@ -1,0 +1,25 @@
+git branch			: shows the current operating branch.
+
+git branch <name>		: creates a new branch.
+
+git checkout <branch>		: moves to the mentioned branch.
+
+git checkout -b <branch>	: creates a new branch and moves to it.
+
+git branch -d <branch>		: deletes a branch
+
+git branch -D <branch>		: deletes a branch forcefully
+
+git merge <branch>		: merges a branch with the current working branch
+
+git merge --abort		: aborts the merge if there are merge conflicts
+
+git log --graph --online	: shows a summary view of the commit history
+
+
+Merge Types:
+
+	1)	Fast-forward	:	occurs when only one branch has moved forward from their common 					starting commit node
+					
+	2)	Three-way	:	occurs when moth branches have moved forward from their common
+					starting nodes, thus causing merge conflicts
