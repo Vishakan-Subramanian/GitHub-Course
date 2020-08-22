@@ -1,0 +1,23 @@
+git clone <url>													: allows to clone a git remote repository to our local computer
+
+git push														: pushes the commits from the local repo to the remote repo
+
+git pull														: fetches the latest commits from the remote repo to the local repo and merges them (git fetch + git merge)
+
+git config --global credential.helper cache						: caches the credentials for 15 min (default)
+
+git config --global credential.helper 'cache --timeout=3600'	: sets the timeout for credential caching to 1 hour
+
+git remote														: lists remote repositories
+
+git remote -v													: lists remote repositories, verbosely
+
+git remote show <name>											: describes a single remote repo
+
+git remote update												: fetches the most up-to-date changes made remotely, does not auto-merge like git pull
+
+git fetch 														: downloads objects and references from another repository
+
+git branch -r 													: lists remote repositories
+
+git checkout <branch>											: to move to a tracked remote branch
