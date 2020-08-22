@@ -1,51 +1,51 @@
-sudo apt-get install git	: to install git
+sudo apt-get install git		: to install git
 
 git config --global user.name 	: to configure the user name of the local machine/yourself to the current git repository to track changes (globally, if --global is included)
 
 git config --global user.email	: to configure the user email of the local machine/yourself to the current git repository to track changes (globally, if --global is included)
 
-git --version			: to check if git is installed in the machine
+git --version					: to check if git is installed in the machine
 
-git init			: to initialise a git repository
+git init						: to initialise a git repository
 
-git add <filename>		: to add a file to be tracked by git
+git add <filename>				: to add a file to be tracked by git
 
-git commit 			: to commit added changes to the git repository
+git commit 						: to commit added changes to the git repository
 
-git diff			: to check the differences between git repo & local repo
+git diff						: to check the differences between git repo & local repo
 
-git log				: to view previous commit logs 
+git log							: to view previous commit logs 
 
-git config -l			: to view git configuration
+git config -l					: to view git configuration
 
-git commit -a			: skips the staging stage of the process and commits modified files directly with the smaller -m type commit message
+git commit -a					:skips the staging stage of the process and commits modified files directly with the smaller -m type 	commit message
 
-HEAD				: points to the latest checked-out version tracked by git. Changes are referenced using this HEAD as a base (for git status, git diff etc.)
+HEAD							: points to the latest checked-out version tracked by git. Changes are referenced using this HEAD as a base (for git status, git diff etc.)
 
-git add -p			: view unstaged patches made wrt to the current HEAD
+git add -p						: view unstaged patches made wrt to the current HEAD
 
-git log -p			: view the previous commit logs along with their patches
+git log -p						: view the previous commit logs along with their patches
 
-git diff --staged		: view staged patches made wer to the current HEAD
+git diff --staged				: view staged patches made wer to the current HEAD
 
-git show <commit_id>		: shows the commit log with patch of the commit id given
+git show <commit_id>			: shows the commit log with patch of the commit id given
 
-git log --stat			: view the stats(+/- of lines made) along with the commit log
+git log --stat					: view the stats(+/- of lines made) along with the commit log
 
-git mv				: used to move files between directories of a repo or change filename (will be staged automatically)
+git mv							: used to move files between directories of a repo or change filename (will be staged automatically)
 
-git rm				: used to remove files that are in the current repo (will be staged automatically)
+git rm							: used to remove files that are in the current repo (will be staged automatically)
 
-.gitignore file			: allows for some unnecessary/personal files to be untracked by git
+.gitignore file					: allows for some unnecessary/personal files to be untracked by git
 
-git checkout			: allows you to revert back unstaged changes back to the latest commit state
+git checkout					: allows you to revert back unstaged changes back to the latest commit state
 
-git checkout -p			: allows you to choose to revert change by change (unstaged)
+git checkout -p					: allows you to choose to revert change by change (unstaged)
 
-git reset			: allows you to revert staged changes back to the latest commit state
+git reset						: allows you to revert staged changes back to the latest commit state
 
-git commit --amend		: used to overwrite the previous commit with whatever is currently staged. (TO BE AVOIDED WHEN THE COMMIT HAS ALREADY BEEN MADE PUBLIC IN A SHARED REPOSITORY)
+git commit --amend				: used to overwrite the previous commit with whatever is currently staged. (TO BE AVOIDED WHEN THE COMMIT HAS ALREADY BEEN MADE PUBLIC IN A SHARED REPOSITORY)
 
-git revert HEAD			: does the inverse of the previous commit so that it is undone. The history is intact, as the git logs will store that a revert has been done.
+git revert HEAD					: does the inverse of the previous commit so that it is undone. The history is intact, as the git logs will store that a revert has been done.
 
-git revert <commit_id>		: rolls back the repository to the specified commit_id
+git revert <commit_id>			: rolls back the repository to the specified commit_id
