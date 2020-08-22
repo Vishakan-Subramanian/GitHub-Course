@@ -21,3 +21,5 @@ git fetch 														: downloads objects and references from another reposito
 git branch -r 													: lists remote repositories
 
 git checkout <branch>											: to move to a tracked remote branch
+
+git rebase <branch>												: to change the base of the current branch (NOTE: Not a good practice to rebase on remote repos as they alter the Git history)
