@@ -1,0 +1,49 @@
+Pull request	-	A pull request is submitted to the project owners/maintainers when you do not have write access to the 
+repository and wish to contribute some changes to their project.
+
+It's general practice to send only ONE COMMIT per PULL REQUEST, therefore if we have made multiple commits with our forked 
+branch, we need to squash the commits together. 
+
+AS A RULE, FOLLOW THE PROJECT'S CONTRIBUTION GUIDELINES AND STYLE GUIDELINES.
+
+Procedure for this	:	git rebase -i <master>
+						
+						default option is pick
+						
+						use squash if you wish to keep the commit messages and the committed changes
+
+						use fixup if you do not wish to keep the commit message of that commit, but you wish to keep the 
+						committed changes
+
+						check your commit graph using
+						git log --graph --online --all
+
+						git push (or git push -f) to push the current snapshot
+
+
+Regarding merge issues that occur during pull requests : https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-request-merges
+
+PROCEED WITH CAUTION WHEN USING "GIT COMMIT --AMEND", "GIT REBASE" & "GIT PUSH -F" COMMANDS ON PUBLIC REPOS.
+TRY NOT TO USE "GIT PUSH -F" UNLESS ABSOLUTELY NECESSARY.
+
+
+Code Reviews	-	Code reviews are done to ensure that the code submitted by different users follow style guidelines, pass 
+quality checks and has no discrepancies and maintain code quality.
+
+Related terms	:	Nit 		-	Not a critical change, but a trivial suggestion to make the code better
+					+1			-	Changes have been approved
+
+Once you modify changes that satisfy the reviewer's suggestions, RESOLVE the comments under the pull request.
+
+Style guidelines	: https://google.github.io/styleguide/
+
+Issue Trackers		-	GitHub allows us to track issues/bugs. Issues can be closed with the commit message if "Closes 
+						#<issue_ID>" is specified in the commit message.
+
+						Linking an issue to a pull request is also possible through the GitHub interface. 
+
+Continuous Integration (CI) System	-	Will build and test code everytime there is a change made.
+
+Continuous Deployment/Delivery (CD)	-	Will deploy a new version when small incremental changes are made.
+
+Popular CI/CD Software : Jenkins, Travis-CI
